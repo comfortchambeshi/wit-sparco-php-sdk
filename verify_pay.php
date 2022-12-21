@@ -1,12 +1,24 @@
-<?php 
+<!DOCTYPE html>
+<html lang="en">
 
-include 'inc/auto-loader.php';
-include 'inc/mains.php';
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500">
+     <title>Sparco payment form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway+Dots">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/News-article-for-homepage-by-Ikbendiederiknl.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-
-
-
- ?>
+<body>
  <title>Donation confirmation</title>
     <section class="highlight-blue" style="background: rgb(58,70,86);">
         <div class="container">
@@ -23,7 +35,6 @@ include 'inc/mains.php';
 
 
   $sparco = new Sparcopay();
-  $main = new main();
 
   $ref = $_GET['ref'];
 
@@ -35,15 +46,13 @@ include 'inc/mains.php';
 
   if($verify->status == "TXN_AUTH_SUCCESSFUL")
   {
-    $update = $main->update_custom('donations', 'status', 'success', 'merchant_ref', $ref);
 
-    echo '<h1 class="text-success text-center">Your giving was successful. God bless you!</h1>';
+    echo '<h1 class="text-success text-center">Your payment was successful!</h1>';
 
 
   }else
   {
-     $update = $main->update_custom('donations', 'status', 'failed', 'merchant_ref', $ref);
-     echo '<h1 class="text-danger text-center">Sorry, your payment could not be successful.We appreciate your effort, God bless you!</h1>';
+     echo '<h1 class="text-danger text-center">Sorry, your payment could not be successful!</h1>';
 
   }
 
@@ -53,7 +62,3 @@ include 'inc/mains.php';
             </form>
         </section>
     </div>
-   <?php 
-
-include 'inc/footer.php';
-?>
