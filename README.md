@@ -1,4 +1,8 @@
 # wit Sparco PHP SDK
+# Requirements:
+- Sparco account, https://gateway.sparco.io/register
+- Sparco public and secrete keys, https://gateway.sparco.io/dashboard/settings
+
 ## Configurations
 Open classes/Sparcopay.php and replace "returnUrl" with your domain and root folder of your verify_pay.php as shown below:
 > "returnUrl": "http://localhost/Sparco/verify_pay.php?ref='.$uuid.'",
