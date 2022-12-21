@@ -2,6 +2,7 @@
 ## Configurations
 Open classes/Sparcopay.php and replace "returnUrl" with your domain and root folder of your verify_pay.php as shown below:
 > "returnUrl": "http://localhost/Sparco/verify_pay.php?ref='.$uuid.'",
+!!!Warning, never remove ?ref='.$uuid.' parameter to whichever return url you will decide!!!
 ### Configure public key:
 Open classes/Sparcopay.php and then RequestPay function.
 >> public static $merchantPublicKey = "Your public key";
