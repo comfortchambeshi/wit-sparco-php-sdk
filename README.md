@@ -10,6 +10,7 @@ https://10015.io/tools/jwt-encoder-decoder
 
 On input enter:
 >  {"pubKey":"your public key"}
+
 On JWT Keys, enter your private key.
 
 Copy your JWT payload to:
