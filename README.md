@@ -14,7 +14,7 @@ On input enter:
 On JWT Keys, enter your private key.
 
 Copy your JWT payload to:
-classes/Sparcopay.php and then token as shwon:
+classes/Sparcopay.php, verifyTransaction and then token as shown:
 > 'token: Your JWT token'
 
 ### Boom!!! Your Wit Sparco SDK is ready to go
