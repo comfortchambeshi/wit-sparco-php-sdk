@@ -24,5 +24,10 @@ Copy your JWT payload to:
 classes/Sparcopay.php, verifyTransaction and then token as shown:
 > 'token: Your JWT token'
 
+### Call For a payment
+
+> $sparco = new Sparcopay();
+> $pay = $sparco->RequestPay("Payment name", $amount, "ZMW", $first_name, $last_name, $email, $phone_number);
+
 ### Boom!!! Your Wit Sparco SDK is ready to go
 
