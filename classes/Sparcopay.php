@@ -16,7 +16,7 @@ class Sparcopay{
       $var = true;
 
       curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://checkout.sparco.io/gateway/api/v1/checkout',
+        CURLOPT_URL => 'https://checkout.broadpay.io/gateway/api/v1/checkout',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -63,7 +63,7 @@ class Sparcopay{
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://live.sparco.io/gateway/api/v1/transaction/query?merchantReference='.$merchantReference.'',
+    CURLOPT_URL => 'https://live.broadpay.io/gateway/api/v1/transaction/query?merchantReference='.$merchantReference.'',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
