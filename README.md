@@ -1,7 +1,7 @@
-# wit Sparco PHP SDK
+# wit Broadpay PHP SDK
 # Requirements:
-- Sparco account, https://gateway.sparco.io/register
-- Sparco public and secrete keys, https://gateway.broadpay.io/dashboard/settings
+- Broadpay account, https://gateway.broadpay.io/register
+- Broadpay public and secrete keys, https://gateway.broadpay.io/dashboard/settings
 
 ## Configurations
 Open classes/Sparcopay.php and replace "returnUrl" with your domain and root folder of your verify_pay.php as shown below:
